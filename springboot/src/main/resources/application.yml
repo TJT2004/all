@@ -1,0 +1,15 @@
+server:
+  port: 8803
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/factory?serverTimezone=UTC
+    username: root
+    password: tangjiangtao123
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
